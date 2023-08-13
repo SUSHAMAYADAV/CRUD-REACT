@@ -65,7 +65,7 @@ const tdStyle= {
       <input
       style={{padding:'10px',borderRadius:'7px'}}
         type="text"
-        placeholder="description"
+        placeholder="descriptions"
         onChange={(e) => setDescription(e.target.value)}
       />
       <button style={{padding:'10px 120px 7px 127px',marginLeft:'258px',borderRadius:'7px'}} onClick={addTaskBtn}>Add Task</button>
