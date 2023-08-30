@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect,useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 const List = () => {
@@ -34,8 +34,7 @@ const List = () => {
         Total add carts items :
         <span style={{ color: "red" }}>{count === 0 ? null : count}</span>
       </h3>
-      {data
-        ?.filter((item) => {
+      {data ?.filter((item) => {
           return Object.keys(item).some((key) => {
             return String(item[key])
               .toLocaleLowerCase()
@@ -45,7 +44,7 @@ const List = () => {
         .map((item, index) => {
           return (
             <div className="card" key={index}>
-              <Link to={`/userdetails/${item.id}`}>
+              <Link to={`/user1details/${item.id}`}>
                 <h3>{item.title}</h3>
                 <img src={item.image} alt="Denim Jeans" height="160px" />
                 <p className="price"> Rs.{item.price}</p>

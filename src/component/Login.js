@@ -63,9 +63,6 @@ navigate("/signup")
     <button onClick={signupPage} 
      style={{padding:"5px 70px 12px 70px ",borderRadius:"10px"}}>Signup</button>
     </div>
-
-   
-   
     </>
  )
 }
